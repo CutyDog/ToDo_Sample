@@ -14,3 +14,4 @@ export default new VueRouter({
     { path: '/contact', component: Contact },
   ],
 })
+

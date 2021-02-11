@@ -32,6 +32,9 @@
       </ul>
     </div>
   </div>
+  
+  
+
 </template>
 
 <script>
@@ -66,7 +69,7 @@
          }, (error) => {
            console.log(error);
          });
-       }       
+       },
        displayFinishedTasks: function() {
          document.querySelector('#finished-tasks').classList.toggle('display_none');
        }, 
@@ -105,4 +108,23 @@
   .line-through {
     text-decoration: line-through;
   }
+  
+  .VueCarousel{
+    height: 300px;
+  }
+  .VueCarousel-wrapper, .VueCarousel-inner, .VueCarousel-slide{
+    height: 100% !important;
+  }
+  .VueCarousel-slide .slider-inner {
+    height: 100%;
+    /*background-color: #62caaa;*/ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-content: flex-end;
+    border: 2px solid #62caaa;
+    /*font-size: 30px;*/ 
+    border-radius: 10px;
+  }
 </style>
+
